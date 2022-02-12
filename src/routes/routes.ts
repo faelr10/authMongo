@@ -1,12 +1,11 @@
 import { request, response, Router } from "express";
+import { UserController } from "../Controller/UserController";
 import User from "../model/User";
 
 const routes = Router();
 
-routes.get('/',async(request,response)=>{
-    const user = await User.findById({_id:"6206f9dd064dd8e7f932b613"})
-    console.log(user)
-    response.json(user.name)
-})
+const userController = new UserController()
+
+routes.post('/',userController.create)
 
 export { routes };
