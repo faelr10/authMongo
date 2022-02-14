@@ -1,17 +1,17 @@
-import { connect } from "mongoose"
-import dotenv from 'dotenv'
+// import { connect } from "mongoose"
+// import dotenv from 'dotenv'
 
-dotenv.config()
+// dotenv.config()
 
-export const mongoConnect = async () => {
+// export const mongoConnect = async () => {
 
-    try {
+//     try {
 
-        await connect(process.env.MONGO_URL as string)
-        console.log("deu certo!")
+//         await connect(process.env.MONGO_URL as string)
+//         console.log("deu certo!")
 
-    } catch (error) {
-        console.log(error)
-    }
+//     } catch (error) {
+//         console.log(error)
+//     }
 
-}
+// }
