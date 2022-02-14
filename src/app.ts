@@ -1,10 +1,10 @@
 import express, { NextFunction, Response, Request } from "express";
 import "express-async-errors";
 import { routes } from "./routes/routes";
-import {mongoConnect} from './database/mongo'
+//import {mongoConnect} from './database/mongo'
 
 
-mongoConnect()
+//mongoConnect()
 const app = express();
 
 app.use(express.json());
