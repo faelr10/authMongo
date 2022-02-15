@@ -12,7 +12,8 @@ const userController = new UserController()
 
 routes.get('/getBalance',authBasic,userController.getBalance)
 routes.get('/newPix',authAdmin,userController.newPix)
-
 routes.post('/login',userController.login)
+
+routes.post('/authorization',userController.authorization)
 
 export { routes };
